@@ -1,0 +1,1 @@
+<p><?php echo date('Y') ?> &copy; DIY - Developer Team</p>

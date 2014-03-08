@@ -1,0 +1,17 @@
+[
+    {
+        "fild":"foo",
+        "val": "this is foo",
+        "type": "input"
+    },
+    {
+        "fild":"email",
+        "val":"a9un9hari@gmail.com",
+        "type":"input"
+    },
+    {
+        "fild":"about",
+        "val":"This is about foo",
+        "type":"textarea"
+    }
+]

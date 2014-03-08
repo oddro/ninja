@@ -1,0 +1,9 @@
+RewriteEngine on
+Options -Indexes 
+DirectoryIndex logout.php
+DirectoryIndex index.html
+DirectoryIndex index.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ logout.php/$1 [L]
