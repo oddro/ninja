@@ -1,20 +1,46 @@
-<!doctype html>
-<html>
-<head>
-    <title>Contoh HMVC dan Template Library</title>
-</head>
-<body>
-    <header id="page_header">
-        <h1>Contoh HMVC dan Template Library</h1>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <section id="page_body">
+        <title>Printing Sticker made easy</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href="{theme_path}assets/css/gravira.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
         <?php echo $template['body']; ?>
-    </section>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="{theme_path}assets/js/netra.js"></script>
 
-    <footer id="page_footer">
-        <p><?php echo date('Y'); ?> Copyright by Your Name</p>
-        <p>Page rendered in {elapsed_time} seconds</p>
-    </footer>
-</body>
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+            _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+            $.src='//v2.zopim.com/?1wG4jOOrE8kyD7DN4Idhzau58iQpZMAu';z.t=+new Date;$.
+            type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+        </script>
+    </body>
 </html>

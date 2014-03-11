@@ -11,6 +11,7 @@ class Public_Controller extends MY_Controller
     {
         $this->template
         ->set_theme('public')
+        ->set('theme_path',base_url().$this->template->get_theme_path())
         ->set_layout('layout.html')
         ->set_partial('content', $this->controller, ci()->data)
         ->build($this->controller, ci()->data);
