@@ -4,7 +4,8 @@ class Home extends Public_Controller {
 
 	public function index()
 	{
-		ci()->data['results'] = 'test';
+		$this->load->model('product/categoryProduct');
+		ci()->data['categoryProduct'] = CategoryProduct::all()->toArray();
         $this->build();
 	}
 }

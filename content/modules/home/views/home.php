@@ -1,5 +1,3 @@
-
-
       <div class="navbar navbar-inverse navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -45,84 +43,47 @@
         <div class="row common">
           <h2 class="title" id="shop">Produk Kami</h2>
           <div class="divider"></div>
+          <?php foreach($categoryProduct as $category): ?>
           <div class="col-sm-4">
             <div class="oddro-services custom-shape">
-              <img src="assets/images/custom-shape.png" data-at2x="img/service-icon-1@2x.png" alt="Portability service">
-              <h3>Custom Shape</h3>
-              <p>Sticker dengan bentuk garis tepi yang di sesuaikan dengan bentuk objek gambar/tulisan</p>
+              <img src="<?php echo base_url().'content/upload/img/category-product/'.$category['img'] ?>" data-at2x="img/service-icon-1@2x.png" alt="Portability service">
+              <h3><?php echo $category['name'] ?></h3>
+              <p><?php echo $category['description'] ?></p>
             </div> <!-- /.service -->
           </div>
-
-          <div class="col-sm-4">
-            <div class="oddro-services">
-              <img src="assets/images/circle.png" alt="Portability service">
-              <h3>Circle Sticker</h3>
-              <p>Sticker dengan bentuk garis tepi yang di sesuaikan dengan bentuk objek gambar/tulisan</p>
-            </div> <!-- /.service -->
-          </div>
-
-          <div class="col-sm-4">
-            <div class="oddro-services">
-              <img src="assets/images/rectangle.png" data-at2x="img/service-icon-1@2x.png" alt="Portability service">
-              <h3>Rectangle Sticker</h3>
-              <p>Sticker dengan bentuk garis tepi yang di sesuaikan dengan bentuk objek gambar/tulisan</p>
-            </div> <!-- /.service -->
-          </div>
-
-          <div class="col-sm-4">
-            <div class="oddro-services">
-              <img src="assets/images/square.png" data-at2x="img/service-icon-1@2x.png" alt="Portability service">
-              <h3>Square Sticker</h3>
-              <p>Sticker dengan bentuk garis tepi yang di sesuaikan dengan bentuk objek gambar/tulisan</p>
-            </div> <!-- /.service -->
-          </div>
-
-          <div class="col-sm-4">
-            <div class="oddro-services">
-              <img src="assets/images/gadget.png" data-at2x="img/service-icon-1@2x.png" alt="Portability service">
-              <h3>Gadget Sticker</h3>
-              <p>Sticker dengan bentuk garis tepi yang di sesuaikan dengan bentuk objek gambar/tulisan</p>
-            </div> <!-- /.service -->
-          </div>
-
-          <div class="col-sm-4">
-            <div class="oddro-services">
-              <img src="assets/images/bumper.png" data-at2x="img/service-icon-1@2x.png" alt="Portability service">
-              <h3>Bumper Sticker</h3>
-              <p>Sticker dengan bentuk garis tepi yang di sesuaikan dengan bentuk objek gambar/tulisan</p>
-            </div> <!-- /.service -->
-          </div>
+        <?php endforeach; ?>
         </div>
 
       </div>
 
-      <section class="features netra-padding common">
-        <div class="container netra-landing">
-          <h2>Some of our client</h2>
-          <h4 class="subtitle">Our team of professionals is constantly working to satisfy the needs of our clients.</h4>
-          <div class="divider"></div>
-          <img src="https://d1vje5lvs6ypii.cloudfront.net/assets/homepage/customers-997c68933e9fb1e8beb9609cb658c8b8.png">
-        </div><!-- /.container -->
-      </section>
-      <footer class="footer common">
-        <div class="container netra-landing">
-          <div class="col-md-12 feedback"></div>
-          <div class="col-md-6">
-            <ul class="bs-docs-footer-links muted">
-              <li><a href="https://github.com/twbs/bootstrap">About Us</a></li>
-              <li>·</li>
-              <li><a href="../getting-started/#examples">Product Quality</a></li>
-              <li>·</li>
-              <li><a href="../2.3.2/">FAQ</a></li>
-              <li>·</li>
-              <li><a href="../about/">About</a></li>
-              <li>·</li>
-              <li><a href="http://expo.getbootstrap.com">Contact</a></li>
-              <li>·</li>
-              <li><a href="http://blog.getbootstrap.com">Terms</a></li>
-              <li>·</li>
-              <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Privacy</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 copyright">© 2014. Oddro.com. All Rights Reserved</div>
-        </div>
+<section class="features netra-padding common">
+  <div class="container netra-landing">
+    <h2>Some of our client</h2>
+    <h4 class="subtitle">Our team of professionals is constantly working to satisfy the needs of our clients.</h4>
+    <div class="divider"></div>
+    <img src="https://d1vje5lvs6ypii.cloudfront.net/assets/homepage/customers-997c68933e9fb1e8beb9609cb658c8b8.png">
+  </div><!-- /.container -->
+</section>
+<footer class="footer common">
+  <div class="container netra-landing">
+    <div class="col-md-12 feedback"></div>
+    <div class="col-md-6">
+      <ul class="bs-docs-footer-links muted">
+        <li><a href="https://github.com/twbs/bootstrap">About Us</a></li>
+        <li>·</li>
+        <li><a href="../getting-started/#examples">Product Quality</a></li>
+        <li>·</li>
+        <li><a href="../2.3.2/">FAQ</a></li>
+        <li>·</li>
+        <li><a href="../about/">About</a></li>
+        <li>·</li>
+        <li><a href="http://expo.getbootstrap.com">Contact</a></li>
+        <li>·</li>
+        <li><a href="http://blog.getbootstrap.com">Terms</a></li>
+        <li>·</li>
+        <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Privacy</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 copyright">© 2014. Oddro.com. All Rights Reserved</div>
+  </div>
+</footer>
