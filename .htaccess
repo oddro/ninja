@@ -1,5 +1,5 @@
 RewriteEngine on
-Options -Indexes 
+#Options -Indexes 
 DirectoryIndex logout.php
 DirectoryIndex index.html
 DirectoryIndex index.php
