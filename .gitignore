@@ -1,6 +1,6 @@
-*/config/development
-*/system/cms/logs/log-*.php
-*/system/cms/logs/!index.html
-*/cache/*
-*/cache/!index.html
-*/system/cms/config/database.php
+config/development
+system/cms/logs/log-*.php
+system/cms/logs/!index.html
+cache/*
+cache/!index.html
+system/cms/config/database.php
