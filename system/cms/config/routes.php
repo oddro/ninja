@@ -43,6 +43,8 @@ $admin_url										= 'admin';
 $route['default_controller'] = "home";
 $route['404_override'] = '';
 
+$route['login'] = 'users/login';
+
 $route[$admin_url.'/login']						= 'users/login';
 $route[$admin_url.'/login/action']				= 'users/login/action';
 $route[$admin_url.'/login/(:any)']				= 'users/login/index/$1';

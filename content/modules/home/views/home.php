@@ -1,31 +1,4 @@
-      <div class="navbar navbar-inverse navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"></a>
-          </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">Sticker</a></li>
-              <li><a href="#contact">Skin</a></li>
-              <li><a href="#contact">Gallery</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              
-              <li><a href="#"><i class="fa fa-shopping-cart"></i> IDR 88000</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#about">Signup</a></li>
 
-            </ul>
-          </div>
-        </div>
-      </div>
       <div class="jumbotron heading">
         <div class="container netra-landing">
           <div class="left-side">
@@ -64,26 +37,3 @@
     <img src="https://d1vje5lvs6ypii.cloudfront.net/assets/homepage/customers-997c68933e9fb1e8beb9609cb658c8b8.png">
   </div><!-- /.container -->
 </section>
-<footer class="footer common">
-  <div class="container netra-landing">
-    <div class="col-md-12 feedback"></div>
-    <div class="col-md-6">
-      <ul class="bs-docs-footer-links muted">
-        <li><a href="https://github.com/twbs/bootstrap">About Us</a></li>
-        <li>·</li>
-        <li><a href="../getting-started/#examples">Product Quality</a></li>
-        <li>·</li>
-        <li><a href="../2.3.2/">FAQ</a></li>
-        <li>·</li>
-        <li><a href="../about/">About</a></li>
-        <li>·</li>
-        <li><a href="http://expo.getbootstrap.com">Contact</a></li>
-        <li>·</li>
-        <li><a href="http://blog.getbootstrap.com">Terms</a></li>
-        <li>·</li>
-        <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Privacy</a></li>
-      </ul>
-    </div>
-    <div class="col-md-6 copyright">© 2014. Oddro.com. All Rights Reserved</div>
-  </div>
-</footer>

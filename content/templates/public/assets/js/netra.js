@@ -11,6 +11,14 @@ $(function() {
 	      }
 	    }
 	  });
+	  $('a.ajax-cart').click(function(){
+	  	alert($(this).attr('href'));
+	  	$.get( $(this).attr('href'), function( data ) {
+		  $( ".result" ).html( data );
+		  alert( "Load was performed." );
+		});
+	  	return false;
+	  });
 	});
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
