@@ -1,8 +1,8 @@
-<div class="content-list" style="min-height:300px;padding-top:100px;">
-	<div class="grid-container">
-		<div class="grid-100 mobile-grid-100">
+<div class="container netra-landing" style="padding-bottom:100px;">
+    <div class="row common">
+    	<h2 class="title" id="shop">Produk Kami</h2>
 			<?php echo form_open('cart/update/action'); ?>
-			<table class="tabgreen shoppingcart-table post_message">
+    	<table class="table">
 				<tr class="head">
 					<th colspan="5">Keranjang Belanja Anda</th>
 				</tr>
@@ -31,10 +31,9 @@
 					<td colspan="3" class="text-right">Total Sebelum Pengiriman</td>
 					<td class="fontbold">Rp. <?php echo $this->cart->format_number($this->cart->total()); ?>,-</td>
 				</tr>
-			</table>
-				<input type="submit" value="Ubah belanjaan" class="buttonred"/>
-				<input type="button" value="Selesai Berbelanja" class="buttongreen" onclick=" document.location.href='<?php echo site_url('cart/billingshipping') ?>'"/>
+		</table>
+			<input type="submit" value="Ubah belanjaan" class="buttonred"/>
+			<input type="button" value="Selesai Berbelanja" class="buttongreen" onclick=" document.location.href='<?php echo site_url('cart/billingshipping') ?>'"/>
 			<?php echo form_close() ?>
-		</div>		
-	</div>		
-</div>	
+    </div>
+</div>

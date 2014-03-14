@@ -52,6 +52,13 @@ class Cart extends Public_Controller {
 			echo 'true';
 		}
 	}
+
+	// Update product to cart
+	public function do_update()
+	{
+		$this->cart->update($_POST);
+		redirect('cart','refresh');
+	}
 }
 
 /* End of file cart.php */
