@@ -17,7 +17,7 @@
         <li class="<?php echo @$nav_gallery ?>" ><a href="<?php echo site_url('gallery') ?>">Gallery</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-shopping-cart"></i> IDR 88000</a></li>
+        <li><a href="<?php echo site_url('cart') ?>" id="cart"></a></li>
         <li><a href="<?php echo site_url('login') ?>">Login</a></li>
         <li><a href="<?php echo site_url('signup') ?>">Signup</a></li>
       </ul>

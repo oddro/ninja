@@ -7,7 +7,7 @@
               <img src="<?php echo base_url().'content/upload/img/product-ready/'.$product['src'] ?>" alt="<?php echo $product['name'] ?>">
               <h3><?php echo $product['name'] ?></h3>
               <p>Rp. <?php echo $this->cart->format_number($product['price']) ?></p>
-              <a class="ajax-cart" href="<?php echo site_url('cart/add/readysticker/'.$product['id'].'/'.url_title($product['name'])) ?>" class="btn btn-primary btn-lg active" role="button">Buy</a>
+              <a class="ajax-cart" href="<?php echo site_url('cart/add/'.$product['id'].'/'.url_title($product['name'])) ?>" class="btn btn-primary btn-lg active" role="button">Buy</a>
             </div> <!-- /.service -->
           </div>
         <?php endforeach; ?>

@@ -11,11 +11,12 @@ $(function() {
 	      }
 	    }
 	  });
+	  $( "#cart" ).load( baseUrl + 'cart/total' );
 	  $('a.ajax-cart').click(function(){
-	  	alert($(this).attr('href'));
 	  	$.get( $(this).attr('href'), function( data ) {
-		  $( ".result" ).html( data );
-		  alert( "Load was performed." );
+	  		$( "#cart" ).load( baseUrl + 'cart/total' );
+		  var show = (data) ? 'Sticker sudah masuk ke keranjang belanja' : 'ada kesalahan silahkan ulangi kembali';
+		  alert(show);
 		});
 	  	return false;
 	  });
