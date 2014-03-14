@@ -49,7 +49,7 @@ class Cart extends Public_Controller {
 			redirect('cart','refresh');
 		}
 		else{
-			return true;
+			echo 'true';
 		}
 	}
 }
